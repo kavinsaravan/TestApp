@@ -88,13 +88,9 @@ struct RadioButtonGroup: View {
         VStack {
             ForEach(options, id: \.self) { option in
                 RadioButton(selectedOption: $selectedOption, option: option)
-                if (option.isSelected == true){
-                    Text(option)
-                }
             }
             Spacer()
-            
-            
+            Text(selectedOption)
         }
         .padding()
     }
