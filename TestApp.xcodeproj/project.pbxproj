@@ -17,6 +17,7 @@
 		AEB4EE662C8AAA8D00FE6815 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4EE652C8AAA8D00FE6815 /* Answer.swift */; };
 		AEB4EE6A2C8AAC0100FE6815 /* NextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4EE692C8AAC0100FE6815 /* NextButton.swift */; };
 		AEB4EE6E2C8AB74B00FE6815 /* Answerrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4EE6D2C8AB74B00FE6815 /* Answerrow.swift */; };
+		AEB4EE702C8ABB4600FE6815 /* Choices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB4EE6F2C8ABB4600FE6815 /* Choices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		AEB4EE652C8AAA8D00FE6815 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		AEB4EE692C8AAC0100FE6815 /* NextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextButton.swift; sourceTree = "<group>"; };
 		AEB4EE6D2C8AB74B00FE6815 /* Answerrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answerrow.swift; sourceTree = "<group>"; };
+		AEB4EE6F2C8ABB4600FE6815 /* Choices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				AEB4EE672C8AAB6B00FE6815 /* Model */,
 				AEB4EE362C87985200FE6815 /* TestAppApp.swift */,
 				AEB4EE382C87985200FE6815 /* ContentView.swift */,
+				AEB4EE6F2C8ABB4600FE6815 /* Choices.swift */,
 				AEB4EE3A2C87985300FE6815 /* Assets.xcassets */,
 				AEB4EE3C2C87985300FE6815 /* Preview Content */,
 			);
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB4EE392C87985200FE6815 /* ContentView.swift in Sources */,
+				AEB4EE702C8ABB4600FE6815 /* Choices.swift in Sources */,
 				AEB4EE662C8AAA8D00FE6815 /* Answer.swift in Sources */,
 				AEB4EE6A2C8AAC0100FE6815 /* NextButton.swift in Sources */,
 				AEB4EE6E2C8AB74B00FE6815 /* Answerrow.swift in Sources */,

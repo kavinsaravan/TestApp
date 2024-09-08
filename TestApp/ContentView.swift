@@ -19,51 +19,12 @@ struct ContentView: View {
                     
             }
             .padding()
-            Text("Ask your question blah blah blahasdfvasdfasdvf?")
+            Text("Ask your question?")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding()
             Spacer()
-            VStack(){
-                Button(action: {
-                    print("Choice A Clicked!")
-                }) {
-                    Text("Choice A")
-                        .padding()
-                        .cornerRadius(20)
-                        .background(Color.green)
-                        .foregroundColor(.purple)
-                        .font(.headline)
-                }
-                Button(action: {
-                    print("Choice B Clicked!")
-                }) {
-                    Text("Choice B")
-                        .padding()
-                        .background(Color.green)
-                        .foregroundColor(.purple)
-                        .font(.headline)
-                }
-                Button(action: {
-                    print("Choice C Clicked!")
-                }) {
-                    Text("Choice C")
-                        .padding()
-                        .background(Color.green)
-                        .foregroundColor(.purple)
-                        .font(.headline)
-                }
-                Button(action: {
-                    print("Choice D Clicked!")
-                }) {
-                    Text("Choice D")
-                        .padding()
-                        .background(Color.green)
-                        .foregroundColor(.purple)
-                        .font(.headline)
-                }
-                
-            }
+            Choices()
             Spacer()
             Button(action: {
                 print("Button Clicked!")
