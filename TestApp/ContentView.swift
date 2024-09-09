@@ -9,41 +9,67 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack() {
-            HStack {
-                Text("Quiz")
-                    .font(.largeTitle).fontWeight(.bold).foregroundColor(Color.red).multilineTextAlignment(.center).padding()
-                Spacer()
-                Text("Score:")
-                    .multilineTextAlignment(.center)
+        NavigationView {
+            
+            VStack() {
+                HStack {
+                    Text("Quiz")
+                        .font(.largeTitle).fontWeight(.bold).foregroundColor(Color.red).multilineTextAlignment(.center).padding()
+                    Spacer()
+                    Text("Score:")
+                        .multilineTextAlignment(.center)
                     
+                }
+                .padding()
+                Text("Ask your question?")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding()
+                Spacer()
+                Choices()
+                Spacer()
+                Button(action: {
+                    print("Button Clicked!")
+                }) {
+                    Text("Next")
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .font(.title)
+                }
+                
+                Spacer()
+                
             }
             .padding()
-            Text("Ask your question?")
-                .font(.title2)
-                .fontWeight(.bold)
-                .padding()
-            Spacer()
-            Choices()
-            Spacer()
-            Button(action: {
-                print("Button Clicked!")
-            }) {
-                Text("Next")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .font(.title)
+            .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    print("Back button tapped")
+                }) {
+                    Image(systemName: "arrow.left")
+                        .foregroundColor(.blue)
+                }
             }
             
-            Spacer()
+            ToolbarItem(placement: .principal) {
+                Text("Home")
+                    .font(.headline)
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    print("Settings button tapped")
+                }) {
+                    Image(systemName: "gear")
+                        .foregroundColor(.blue)
+                }
+            }
+        }
             
         }
-        .padding()
-        
     }
 }
-
 #Preview {
     ContentView()
 }
