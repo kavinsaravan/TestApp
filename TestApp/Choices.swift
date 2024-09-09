@@ -81,7 +81,7 @@ struct RadioButton: View {
 struct RadioButtonGroup: View {
     @State private var selectedOption = "Option 1"
     
-    var options = ["How to initialize a python comment asdfvmasndfv asdvfasdfvsdf vasdfvv?", "Option 2", "Option 3"]
+    var options = ["Option 1", "Option 2", "Option 3"]
     let option = ""
     
     var body: some View {
