@@ -12,14 +12,14 @@ struct ContentView: View {
         NavigationView {
             
             VStack() {
-                HStack {
-                    Text("Quiz")
-                        .font(.largeTitle).fontWeight(.bold).foregroundColor(Color.red).multilineTextAlignment(.center).padding()
+               // HStack {
+                    //Text("Quiz")
+                       // .font(.largeTitle).fontWeight(.bold).foregroundColor(Color.red).multilineTextAlignment(.center).padding()
                     Spacer()
                     Text("Score:")
-                        .multilineTextAlignment(.center)
+                    .font(.title).multilineTextAlignment(.center)
                     
-                }
+                //}
                 .padding()
                 Text("Ask your question?")
                     .font(.title2)
